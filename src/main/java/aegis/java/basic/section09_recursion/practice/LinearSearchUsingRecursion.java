@@ -8,15 +8,6 @@ public class LinearSearchUsingRecursion {
         System.out.println(findIndex(array, query, 0));
     }
 
-    private static int findIndex(int[] array, int query) {
-        for (int i = 0; i < array.length; i++) {
-            if (array[i] == query) {
-                return i;
-            }
-        }
-        return -1;
-    }
-
     // recursion 1
     private static int findIndex(int[] array, int query, int i) {
         if (i == array.length) {
@@ -27,6 +18,4 @@ public class LinearSearchUsingRecursion {
             return findIndex(array, query, i + 1);
         }
     }
-
-    // recursion 2
 }

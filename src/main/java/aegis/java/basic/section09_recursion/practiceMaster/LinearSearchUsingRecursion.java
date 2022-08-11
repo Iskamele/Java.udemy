@@ -8,6 +8,7 @@ public class LinearSearchUsingRecursion {
         System.out.println(findIndex(array, query, 0));
     }
 
+    // recursion 1
     private static int findIndex(int[] array, int query, int i) {
         if (i == array.length) {
             return -1;
@@ -15,6 +16,20 @@ public class LinearSearchUsingRecursion {
             return i;
         } else {
             return findIndex(array, query, i + 1);
+        }
+    }
+
+    // recursion 2
+    private static int findIndexBadExample(int[] array, int query, int i) {
+        if (i == array.length) {
+            return -1;
+        } else {
+            var foundIndex = findIndexBadExample(array, query, i + 1);
+            if (array[i] == query) {
+                return i;
+            } else {
+                return foundIndex;
+            }
         }
     }
 }
