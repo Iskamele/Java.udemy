@@ -2,7 +2,7 @@ package aegis.java.basic.section07_String.theory;
 
 import java.util.Arrays;
 
-public class StringBasocMethods {
+public class StringBasicMethods {
     public static void main(String[] args) {
         String s = "hello";
 
