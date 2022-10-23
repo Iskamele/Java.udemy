@@ -1,12 +1,11 @@
 package aegis.java.basic.section10_practicalTasks.master;
 
 public class SimplestTextArchiverVariantFour {
-
     public static String digits = "1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ~!@#$%^&*/()_+=-?<>`[]{}\\\"'\\\\|.,";
 
     public static void main(String[] args) {
         // read source data A18 A9A9
-        String source = "A".repeat(11) + "1".repeat(3) + "C".repeat(50)+ "7".repeat(42)+ "n".repeat(191);
+        String source = "A".repeat(11) + "1".repeat(3) + "C".repeat(50) + "7".repeat(42) + "n".repeat(191);
         System.out.println("Source text:   " + source);
 
         // processing
@@ -44,7 +43,7 @@ public class SimplestTextArchiverVariantFour {
         for (int i = 0; i < quotient; i++) {
             result.append(prev).append(digits.charAt(digits.length() - 1));
         }
-        if (remainder !=0){
+        if (remainder != 0) {
             result.append(prev).append(digits.charAt(remainder - 1));
         }
     }

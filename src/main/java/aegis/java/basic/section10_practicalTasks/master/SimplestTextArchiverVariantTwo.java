@@ -1,7 +1,6 @@
 package aegis.java.basic.section10_practicalTasks.master;
 
 public class SimplestTextArchiverVariantTwo {
-
     public static void main(String[] args) {
         // read source data
         String source = "A".repeat(18) + "B".repeat(330) + "C".repeat(5);
@@ -42,7 +41,7 @@ public class SimplestTextArchiverVariantTwo {
         StringBuilder countBuilder = new StringBuilder();
         for (int i = 1; i < zipped.length(); i++) {
             var current = zipped.charAt(i);
-            if (isDigit(current)){
+            if (isDigit(current)) {
                 countBuilder.append(current);
             } else {
                 unzipChar(result, ch, countBuilder);
@@ -61,7 +60,7 @@ public class SimplestTextArchiverVariantTwo {
         }
     }
 
-    private static boolean isDigit(char ch){
+    private static boolean isDigit(char ch) {
         // return Character.isDigit(ch);
         return ch >= '0' && ch <= '9';
     }

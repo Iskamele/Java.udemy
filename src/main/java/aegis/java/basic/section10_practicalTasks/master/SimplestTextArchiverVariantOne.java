@@ -1,7 +1,6 @@
 package aegis.java.basic.section10_practicalTasks.master;
 
 public class SimplestTextArchiverVariantOne {
-
     public static void main(String[] args) {
         // read source data
         String source = "A".repeat(8) + "B".repeat(3) + "C".repeat(5);
